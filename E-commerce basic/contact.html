@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navok</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1 style="font-size: 40px">Navok</h1>
+      <div class="navbar-links">
+        <p class="navbar-link"><a href="index.html">Home</a></p>
+        <p class="navbar-link"><a href="collections.html">Collections</a></p>
+        <p class="navbar-link"><a href="contact.html">Contact</a></p>
+      </div>
+      <div class="navbar-menu-toggle">
+        <i class="fa-solid fa-bars" onclick="shownavbar()"></i>
+      </div>
+    </nav>
+    <div class="side-navbar">
+      <p style="text-align: right">
+        <i class="fa-solid fa-xmark" onclick="hidenavbar()"></i>
+      </p>
+      <div class="side-navbar-links">
+        <p class="side-navbar-link"><a href="index.html">Home</a></p>
+        <p class="side-navbar-link">
+          <a href="collections.html">Collections</a>
+        </p>
+        <p class="side-navbar-link"><a href="contact.html">Contact</a></p>
+      </div>
+    </div>
+    <div class="don">
+      <form action="" class="contactsection">
+        <h2 style="margin-bottom: 10px">Contact Us</h2>
+        <h4>Name:</h4>
+        <input type="text" name="" id="" />
+        <h4>Email:</h4>
+        <input type="text" name="" id="" />
+        <h4>Message:</h4>
+        <textarea name="" id="" cols="30" rows="6"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div class="footer">
+      <div class="footer-container">
+        <div class="footer-box">
+          <h2 class="headingtext">Navok</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
+            quam aeritatis odio deates!
+          </p>
+          <div class="footer-icon-container">
+            <i class="fa-brands fa-instagram" style="color: #ffffff"></i>
+            <i class="fa-brands fa-twitter" style="color: #ffffff"></i>
+            <i class="fa-brands fa-facebook" style="color: #ffffff"></i>
+          </div>
+        </div>
+      </div>
+      <p>@2024 Navok.in</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

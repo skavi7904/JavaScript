@@ -1,0 +1,29 @@
+<h1>Guess the Number</h1>
+<input id="guessed">
+<p id="result">Result</p>
+<button onclick="calculate()">check</button>
+<p id="score" >Score: 10</p>
+
+<script>
+    var guessed = document.getElementById('guessed')
+    var randomno = Math.floor(Math.random()*10)+1
+    var result = document.getElementById('result')
+    var score = document.getElementById('score')
+    var total = 10
+
+    function calculate(){
+        var guessedno = Number(guessed.value) 
+        if (guessedno == randomno) {
+            result.textContent='You are Right'
+            alert('You Won')
+
+        }
+        else{
+            total = total -1
+            result.textContent='You are Wrong'
+            score.textContent='Score'+total
+        }
+
+    }
+
+</script>

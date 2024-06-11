@@ -1,0 +1,14 @@
+<input id="userinput" onkeyup="update()">
+<h1 id="head"></h1>
+
+<style>
+
+</style>
+
+<script>
+    var userinput = document.getElementById('userinput')
+    var head = document.getElementById('head')
+    function update(){
+        head.textContent=userinput.value
+    }
+</script>

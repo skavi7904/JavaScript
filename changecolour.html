@@ -1,0 +1,25 @@
+<div id="idtha"></div>
+<button id="change" onclick="fuc()">change</button>
+
+<style>
+    div{
+        width: 100px;
+        height: 100px;
+        background-color: black;
+    }
+    .box{
+        width: 100%;
+        transition: 2s;
+    }
+</style>
+
+<script>
+    var x = document.getElementById('idtha')
+    function fuc(){
+        x.style.backgroundColor='green'
+        x.setAttribute('class','box')
+
+    }
+
+
+</script>
